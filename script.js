@@ -166,4 +166,18 @@
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
+  // Track preferred budget selection
+var budgetDropdown = document.getElementById("budget");
+
+if (budgetDropdown) {
+  budgetDropdown.addEventListener("change", function () {
+    if (this.value !== "") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "budget_select",
+        budget_range: this.value
+      });
+    }
+  });
+}
 })();
