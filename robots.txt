@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shivam8010809806-cyber.github.io/highrizz-properties-gtm/sitemap.xml
