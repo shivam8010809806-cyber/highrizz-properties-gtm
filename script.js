@@ -126,6 +126,8 @@
     event.preventDefault();
     var validData = validateForm();
     if (!validData) return;
+    var phoneInput = form.querySelector('#phone');
+var phoneValue = phoneInput ? phoneInput.value.trim() : '';
 
     // Do not push names, phone numbers, emails, or other personal information to dataLayer/GA4.
     // This demo has no backend; success means the client-side demo flow completed.
